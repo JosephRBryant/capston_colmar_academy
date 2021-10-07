@@ -70,6 +70,7 @@ nav a {
 .banner img {
     margin: 32px 24px;
     width: 60%;
+    height: auto;
 }
 
 .banner_heading {
@@ -85,7 +86,7 @@ nav a {
     padding: 20px 0px 20px 0px;
 }
 
-button {
+.button {
     color: white;
     background-color: #4A4A4A;
     margin: 20px 0px;
@@ -93,5 +94,57 @@ button {
     border: none;
     font-family: Verdana;
     font-size: 1.8rem;
-    
+    text-align: center;
+    text-decoration: none;    
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 24px 32px 24px;
+}
+
+.information_main {
+    width: 100%;
+    height: auto;
+    margin-right: 24px;
+
+}
+
+.information_main img {
+    margin: 32px 24px;
+    width: 60%;
+    height: auto;
+}
+
+.information_side {
+    width: 40%;
+    height: auto;
+}
+
+.side_container {
+    display: flex;
+    position: relative;
+    border-left: 1px solid #D8D8D8;
+    top: -16px;
+}
+
+.side_img {
+    display: flex;
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.side_img img {
+    width: 100%;
+    height: auto;
+}
+
+.side_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: auto;
 }
