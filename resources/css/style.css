@@ -4,19 +4,28 @@
 }
 
 html {
-    font-family: Verdana;
+    font-family: Montserrat;
     font-size: 16px;
     color: #4A4A4A;    
 }
 
 h1 {
     font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 h4 {
     font-size: 1.8rem;
 }
 
+p {
+    font-size: 1.2rem;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -67,9 +76,13 @@ nav a {
     background-color: #D8D8D8;
 }
 
-.banner img {
+.banner_img {
     margin: 32px 24px;
     width: 60%;
+    height: auto;
+}
+.banner_img img {
+    width: 100%;
     height: auto;
 }
 
@@ -79,7 +92,7 @@ nav a {
     justify-content: center;
     align-content: center;
     margin: 32px;
-    width: 28%;
+    width: 40%;
 }
 
 .banner_text h1, h4 {
@@ -92,7 +105,7 @@ nav a {
     margin: 20px 0px;
     padding: 16px;
     border: none;
-    font-family: Verdana;
+    font-family: Montserrat;
     font-size: 1.8rem;
     text-align: center;
     text-decoration: none;    
@@ -101,42 +114,69 @@ nav a {
 .information {
     display: flex;
     flex-direction: row;
-    margin: 32px 24px 32px 24px;
 }
 
 .information_main {
-    width: 100%;
+    margin: 32px 24px;
+    width: 60%;
     height: auto;
-    margin-right: 24px;
+
 
 }
 
+.information_main h2 {
+    margin: 32px 0px 24px;
+}
+
+.information_main h3 {
+    margin: 24px 0px 32px;
+}
+
 .information_main img {
-    margin: 32px 24px;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
 .information_side {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     height: auto;
+    margin-top: 16px;
+    border-left: 1px solid #E0E2E2;
+}
+
+.side_box1:hover {
+    background-color: #D8D8D8;
+}
+
+.side_box2 {
+    border-bottom: 1px solid #E0E2E2;
+    border-top: 1px solid #E0E2E2;
+}
+
+.side_box2:hover {
+    background-color: #D8D8D8;
+}
+
+.side_box3:hover {
+    background-color: #D8D8D8;
 }
 
 .side_container {
     display: flex;
     position: relative;
-    border-left: 1px solid #D8D8D8;
-    top: -16px;
+    margin: 16px;
 }
 
 .side_img {
     display: flex;
     width: 35%;
     height: auto;
-    padding: 16px;
 }
 
 .side_img img {
+
     width: 100%;
     height: auto;
 }
@@ -146,5 +186,27 @@ nav a {
     flex-direction: column;
     justify-content: center;
     width: 65%;
+    height: auto;
+    padding: 24px;
+}
+
+.course {
+    background-color: #EAEBEC;
+}
+
+.course h2 {
+    padding: 32px 0px;
+    text-align: center;
+}
+
+.course_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course_box {
+    width: 100%;
     height: auto;
 }
