@@ -75,17 +75,18 @@ nav a {
     color: #4A4A4A;
     margin: 8px;
     vertical-align: middle;
-    transition: font-size 200ms ease-in-out;
+    transition: color 200ms ease-in-out, 200ms ease-in-out;
 
 }
 
 nav a:hover {
+    color: #f13c20;
     font-size: 1.6rem;
 }
 
 .banner {
     display: flex;
-    background-color: #D8D8D8;
+    background-color: #efe2ba;
 }
 
 .banner_img {
@@ -115,7 +116,7 @@ nav a:hover {
 
 .button {
     color: white;
-    background-color: #4A4A4A;
+    background-color: #4056a1;
     margin: 20px 200px 20px 0px;
     padding: 16px;
     border: none;
@@ -124,12 +125,12 @@ nav a:hover {
     font-size: 1.8rem;
     text-align: center;
     text-decoration: none;
-    transition: font-size 200ms ease-in-out;    
+    transition: background-color 400ms ease-in-out, 200ms ease-in-out;    
 }
 
 .button:hover {
-    opacity: 0.8;
-    font-size: 1.9rem;
+    background-color: #f13c20;
+    font-size: 2.1rem;
 }
 .information {
     display: flex;
@@ -148,6 +149,7 @@ nav a:hover {
 
 .information_main h5 {
     margin: 32px 0px 0px;
+    color: #f13c20;
 }
 
 .information_main img {
@@ -180,21 +182,20 @@ nav a:hover {
 }
 
 .side_box1:hover {
-    background-color: #D8D8D8;
+    background-color: #c5cbe3;
 }
 
 .side_box2:hover {
-    background-color: #D8D8D8;
+    background-color: #c5cbe3;
 }
 
 .side_box3:hover {
-    background-color: #D8D8D8;
+    background-color: #c5cbe3;
 }
 
 .side_container {
     display: flex;
     position: relative;
-
     margin: 16px;
 }
 
@@ -225,8 +226,13 @@ nav a:hover {
     padding-right: 0;
 }
 
+.side_text a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f13c20;
+}
 .course {
-    background-color: #EAEBEC;
+    background-color: #c5cbe3;
 }
 
 .course h2 {
@@ -269,7 +275,7 @@ nav a:hover {
 }
 
 .thesis_header h2 {
-    padding: 64px 0px;
+    padding: 64px 0px 32px 0px;
     text-align: center;
 }
 
@@ -303,11 +309,11 @@ nav a:hover {
     flex-direction: column;
     width: 40%;
     height: auto;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 #side_box:hover {
-    background-color: #D8D8D8;
+    background-color: #efe2ba;
 }
 
 #side_box {
@@ -342,7 +348,7 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #E0E2E2;
-    padding: 16px 24px 64px 24px;
+    padding: 16px 24px 32px 24px;
 
 }
 
@@ -359,11 +365,12 @@ footer {
 }
 
 .footer_nav p {
-    transition: font-size 200ms ease-in-out;
+    transition: color 200ms ease-in-out, 200ms ease-in-out;
 }
 
 .footer_nav p:hover {
     font-size: 1.3rem;
+    color: #f13c20;
 }
 
 @media screen and (max-width: 1366px) {
