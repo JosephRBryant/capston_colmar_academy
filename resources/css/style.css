@@ -17,6 +17,10 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-size: 1.7rem;
+}
+
 h4 {
     font-size: 1.8rem;
 }
@@ -143,7 +147,7 @@ nav a {
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: auto;
+    height: 100%;
     margin-top: 16px;
     border-left: 1px solid #E0E2E2;
 }
@@ -155,6 +159,7 @@ nav a {
 .side_box2 {
     border-bottom: 1px solid #E0E2E2;
     border-top: 1px solid #E0E2E2;
+    
 }
 
 .side_box2:hover {
@@ -168,13 +173,14 @@ nav a {
 .side_container {
     display: flex;
     position: relative;
+
     margin: 16px;
 }
 
 .side_img {
     display: flex;
     width: 35%;
-    height: auto;
+    height: 100%;
 }
 
 .side_img img {
@@ -187,9 +193,15 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     width: 65%;
     height: auto;
     padding: 24px;
+}
+
+.side_text h4 {
+    margin: 0px 0px 32px 0px;
+    padding-right: 0;
 }
 
 .course {
@@ -205,7 +217,7 @@ nav a {
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
-    margin: 0px 72px;
+    margin: 0px 72px 64px 72px;
     justify-content: space-between;
 }
 
@@ -219,9 +231,102 @@ nav a {
 .course_text {
     background-color: white;
     height: 100%;
-    padding: 32px;
+    padding: 0px 32px 0px 32px;
+}
+
+.course_text h4 {
+    padding-right: 0;
 }
 
 .course_text p {
-    margin: 16px 0px;
+    margin: 32px 0px;
+}
+
+.thesis_header h2 {
+    padding: 64px 0px;
+    text-align: center;
+}
+
+.thesis {
+    display: flex;
+    flex-direction: row;
+}
+
+.thesis_main {
+    padding: 32px 24px;
+    width: 60%;
+    height: auto;
+}
+
+.thesis_main h2 {
+    margin: 32px 0px 24px;
+}
+
+.thesis_main h5 {
+    margin: 32px 0px 0px;
+}
+
+.thesis_main video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis_side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin-top: 32px;
+}
+
+#side_box:hover {
+    background-color: #D8D8D8;
+}
+
+#side_box {
+    display: flex;
+    position: relative;
+    padding: 16px;
+}
+
+.side_image {
+    display: flex;
+    width: 35%;
+    height: auto;
+}
+
+.side_image img {
+
+    width: 100%;
+    height: auto;
+}
+
+.side_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: auto;
+    padding: 24px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E0E2E2;
+    padding: 16px 24px 64px 24px;
+
+}
+
+.footer_nav {
+    display: flex;
+    
+}
+
+.footer_nav a {
+    margin: 0px 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+
 }
