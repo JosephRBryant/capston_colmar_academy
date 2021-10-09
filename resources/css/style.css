@@ -253,11 +253,12 @@ nav a:hover {
     flex-direction: column;
     max-width: 500px;
     margin: 16px;
+    opacity: 0.8;
     transition: opacity 200ms ease-in-out;
 }
 
 .course_box:hover {
-    opacity: 0.8;;
+    opacity: 1;;
 }
 
 .course_text {
