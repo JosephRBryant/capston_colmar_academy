@@ -232,6 +232,83 @@ nav a:hover {
     font-size: 1.2rem;
     color: #f13c20;
 }
+<<<<<<< Updated upstream
+=======
+
+.course_shell {
+    background-color: #c5cbe3;
+}
+
+/*
+
+.course > div {
+    display: flex;
+    justify-content: center;
+}
+
+.course {
+    height: 100%;
+
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "c c c"
+        "e a d"
+        "z b m";
+}
+
+.course_header {
+    grid-area: c;
+    text-align: center;
+    margin: 32px 0px;
+}
+
+.course_box img {
+    width: 100%;
+    height: auto;
+}
+
+.course_text {
+    width: 100%;
+    height: auto;
+}
+
+.engineering {
+    display: flex;
+    grid-area: e;
+}
+
+.art {
+    display: flex;
+    grid-area: a;
+}
+
+.design {
+    display: flex;
+    grid-area: d;
+}
+
+.data {
+    display: flex;
+    grid-area: z;
+}
+
+.business {
+    display: flex;
+    grid-area: b;
+}
+
+.marketing {
+    display: flex;
+    grid-area: m;
+}
+
+
+*/
+
+>>>>>>> Stashed changes
 .course {
     background-color: #c5cbe3;
 }
