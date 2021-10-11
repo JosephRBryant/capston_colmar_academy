@@ -12,10 +12,12 @@ html {
 
 h1 {
     font-size: 3.5rem;
+    color: #004e7c;
 }
 
 h2 {
     font-size: 2.5rem;
+    color: #004e7c;
 }
 
 h3 {
@@ -60,7 +62,7 @@ header {
 }
 
 .logo p {
-    color: #9B9B9B;
+    color: #b73225;
     font-size: 1.5rem;
 }
 
@@ -72,14 +74,14 @@ nav a {
     font-family: Verdana;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #4A4A4A;
+    color: #b73225;
     margin: 8px;
     vertical-align: middle;
     transition: color 400ms ease-in-out;
 }
 
 nav a:hover {
-    color: #f13c20;
+    color: #5c5f58;
 }
 
 .small_nav {
@@ -94,7 +96,7 @@ nav a:hover {
 
 .banner {
     display: flex;
-    background-color: #efe2ba;
+    background-color: #dce1e3;
 }
 
 .banner_img {
@@ -125,7 +127,7 @@ nav a:hover {
 
 .button {
     color: white;
-    background-color: #4056a1;
+    background-color: #b73225;
     margin: 20px 200px 20px 0px;
     padding: 16px 0px;
     border: none;
@@ -138,7 +140,7 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: #f13c20;
+    background-color: #004e7c;
     font-size: 2.1rem;
 }
 
@@ -161,7 +163,7 @@ nav a:hover {
 
 .information_main h5 {
     margin: 32px 0px 0px;
-    color: #f13c20;
+    color: #b73225;
 }
 
 .information_main img {
@@ -194,15 +196,15 @@ nav a:hover {
 }
 
 .side_box1:hover {
-    background-color: #c5cbe3;
+    background-color: #dce1e3;
 }
 
 .side_box2:hover {
-    background-color: #c5cbe3;
+    background-color: #dce1e3;
 }
 
 .side_box3:hover {
-    background-color: #c5cbe3;
+    background-color: #dce1e3;
 }
 
 .side_container {
@@ -246,7 +248,7 @@ nav a:hover {
 .side_text a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #f13c20;
+    color: #b73225;
 }
 
 .info_mobile {
@@ -256,7 +258,7 @@ nav a:hover {
 /* Courses */
 
 .course {
-    background-color: #c5cbe3;
+    background-color: #dce1e3;
 }
 
 .course h2 {
@@ -296,8 +298,13 @@ nav a:hover {
 }
 
 .course_text h4 {
+    color: #5c5f58;
     padding-right: 0;
     margin: 16px 0px;
+}
+
+.course_text span {
+    color: #b73225;
 }
 
 .course_text p {
@@ -401,7 +408,7 @@ nav a:hover {
 }
 
 #side_box:hover {
-    background-color: #efe2ba;
+    background-color: #dce1e3;
 }
 
 #side_box {
@@ -453,11 +460,12 @@ footer {
 }
 
 .footer_nav p {
+    color: #b73225;
     transition: color 200ms ease-in-out;
 }
 
 .footer_nav p:hover {
-    color: #f13c20;
+    color: #5c5f58;
 }
 
 /* Screen Dimension Changes */
@@ -524,11 +532,12 @@ footer {
         padding-top: 5px;
         vertical-align: baseline;
         transition: filter 300ms ease-in-out;
+        filter: invert(19%) sepia(80%) saturate(1964%) hue-rotate(344deg) brightness(107%) contrast(92%);
+
     }
 
     .small_nav img:hover {
-        filter: invert(26%) sepia(53%) saturate(3682%) hue-rotate(353deg) brightness(103%) contrast(89%);
-    }
+        filter: invert(39%) sepia(5%) saturate(553%) hue-rotate(44deg) brightness(90%) contrast(89%);    }
 
     .banner_heading h1 {
         font-size: 2rem;
@@ -642,17 +651,18 @@ footer {
     .mobile_nav img {
         vertical-align: bottom;
         transition: filter 300ms ease-in-out;
+        filter: invert(19%) sepia(80%) saturate(1964%) hue-rotate(344deg) brightness(107%) contrast(92%);
     }
 
     .mobile_nav img:hover {
-        filter: invert(26%) sepia(53%) saturate(3682%) hue-rotate(353deg) brightness(103%) contrast(89%);
+        filter: invert(39%) sepia(5%) saturate(553%) hue-rotate(44deg) brightness(90%) contrast(89%);
     }
 
     /* Banner */
 
     .banner {
         display: block;
-        background-color: #efe2ba;
+        background-color: #dce1e3;
     }
     
     .banner_img {
@@ -782,7 +792,7 @@ footer {
     .side_text a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: #f13c20;
+        color: #b73225;
     }
 
     /* Courses */
@@ -796,7 +806,7 @@ footer {
     }
 
     .course {
-        background-color: #efe2ba;
+        background-color: #dce1e3;
         padding: 32px;
     }
 
@@ -820,7 +830,7 @@ footer {
     }
 
     .button:hover {
-        background-color: #f13c20;
+        background-color: #004e7c;
         font-size: 1.45rem;
     }
 
