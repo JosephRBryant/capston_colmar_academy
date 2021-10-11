@@ -42,7 +42,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
@@ -67,25 +66,24 @@ header {
 
 nav {
     margin: 16px 24px 16px 0px;
-
-
 }
 
 nav a {
-
     font-family: Verdana;
     font-size: 1.5rem;
     text-decoration: none;
     color: #4A4A4A;
     margin: 8px;
     vertical-align: middle;
-    transition: color 200ms ease-in-out, 200ms ease-in-out;
-
+    transition: color 400ms ease-in-out;
 }
 
 nav a:hover {
     color: #f13c20;
-    font-size: 1.6rem;
+}
+
+.small_nav {
+    display: none;
 }
 
 .mobile_nav {
@@ -251,6 +249,10 @@ nav a:hover {
     color: #f13c20;
 }
 
+.info_mobile {
+    display: none;
+}
+
 /* Courses */
 
 .course {
@@ -303,6 +305,10 @@ nav a:hover {
 }
 
 .mobile_course_grid {
+    display: none;
+}
+
+.course_mobile {
     display: none;
 }
 
@@ -433,12 +439,10 @@ footer {
     justify-content: space-between;
     border-top: 1px solid #E0E2E2;
     padding: 16px 24px 32px 24px;
-
 }
 
 .footer_nav {
-    display: flex;
-    
+    display: flex;    
 }
 
 .footer_nav a {
@@ -509,20 +513,21 @@ footer {
         display: none;    
     }
 
-    .mobile_nav {
+    .small_nav {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        margin-left: 160px;
+        margin-left: 200px;
     }
 
-    .mobile_nav img {
+    .small_nav img {
         padding-top: 5px;
         vertical-align: baseline;
+        transition: filter 300ms ease-in-out;
     }
 
-    .mobile_nav img:hover {
-        opacity: 0.5;
+    .small_nav img:hover {
+        filter: invert(26%) sepia(53%) saturate(3682%) hue-rotate(353deg) brightness(103%) contrast(89%);
     }
 
     .banner_heading h1 {
@@ -536,8 +541,6 @@ footer {
         margin: 16px 0px;
         padding-right: 25px;
     }
-
-
 
     .side_text h4 {
         font-size: 1rem;
@@ -554,6 +557,10 @@ footer {
     }
 
     .course_grid {
+        display: none;
+    }
+
+    .course_mobile {
         display: none;
     }
 
@@ -596,4 +603,229 @@ footer {
     .course_text p {
         margin: 16px 0px;
     }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Nav */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    nav {
+        display: none;    
+    }
+
+    .small_nav {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 14px 0 13px 0;
+        align-items: baseline;
+
+    }
+
+    .mobile_logo {
+
+    }
+
+    .mobile_nav img {
+        vertical-align: bottom;
+        transition: filter 300ms ease-in-out;
+    }
+
+    .mobile_nav img:hover {
+        filter: invert(26%) sepia(53%) saturate(3682%) hue-rotate(353deg) brightness(103%) contrast(89%);
+    }
+
+    /* Banner */
+
+    .banner {
+        display: block;
+        background-color: #efe2ba;
+    }
+    
+    .banner_img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .banner_img img {
+        border-radius: 0;
+    }
+    
+    .banner_heading {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 32px 16px;
+    }
+    
+    .banner_heading h4 {
+        padding-right: 0;
+        margin: 32px 16px;
+    }
+
+    .banner_heading p {
+        padding-right: 0;
+        margin: 32px 16px;
+    }
+
+    .banner_heading h1, h4, p {
+        padding-right: 0;
+        margin: 32px 16px;
+    }
+
+    .banner_heading a {
+        text-align: center;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin: 32px 0px;
+        text-align: center;
+    }
+
+    /* Information */
+
+    .information_main {
+        display: none;
+    }
+
+    .information_side {
+        display: none;
+    }
+
+    .info_mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .side_box1m {
+        transition: background-color 200ms linear;    
+    }
+    
+    .side_box2m {
+        transition: background-color 200ms linear;    
+    }
+    
+    .side_box3m {
+        transition: background-color 200ms linear;
+    }
+    
+    .side_box1m:hover {
+        background-color: #c5cbe3;
+    }
+    
+    .side_box2m:hover {
+        background-color: #c5cbe3;
+    }
+    
+    .side_box3m:hover {
+        background-color: #c5cbe3;
+    }
+    
+    .side_container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 16px 16px 32px 16px;
+    }
+    
+    .side_img {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .side_img img {
+        border-radius: 0%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .side_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        padding: 16px;
+    }
+    
+    .side_text h4 {
+        font-size: 1.5rem;
+        margin: 0 0 16px 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .side_text p {
+        font-size: 1rem;
+        margin: 0 0 16px 0;
+    }
+    
+    .side_text a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #f13c20;
+    }
+
+    /* Courses */
+
+    .course_grid {
+        display: none;
+    }
+
+    .mobile_course_grid {
+        display: none;
+    }
+
+    .course {
+        background-color: #efe2ba;
+        padding: 32px;
+    }
+
+    .course h2 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 16px 0 32px 0;
+    }
+
+    .course_mobile {
+        display: flex;
+        flex-direction: column;
+        padding: ;
+    }
+
+    .button {
+        margin: 4px;
+        font-size: 1.4rem;
+        text-align: right;
+        justify-content: start;
+        padding-left: 16px;
+    }
+
+    .button:hover {
+        background-color: #f13c20;
+        font-size: 1.45rem;
 }
