@@ -726,27 +726,37 @@ footer {
     }
     
     .side_box1m {
+        border-top: 4px solid white;
         transition: background-color 200ms linear;    
     }
     
     .side_box2m {
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
         transition: background-color 200ms linear;    
     }
     
     .side_box3m {
+        border-bottom: 4px solid white;
         transition: background-color 200ms linear;
     }
     
     .side_box1m:hover {
-        background-color: #c5cbe3;
+        border-top: 4px solid white;
+
+        background-color: #dce1e3;
     }
     
     .side_box2m:hover {
-        background-color: #c5cbe3;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+        background-color: #dce1e3;
     }
     
     .side_box3m:hover {
-        background-color: #c5cbe3;
+
+        border-bottom: 4px solid white;
+        background-color: #dce1e3;
     }
     
     .side_container {
